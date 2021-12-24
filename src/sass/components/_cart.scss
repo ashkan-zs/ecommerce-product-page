@@ -1,0 +1,36 @@
+.cart {
+  position: relative;
+  &__container {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgb(0, 0, 0, 0.2);
+    width: 350px;
+    height: 220px;
+    top: 50px;
+    right: -115px;
+    z-index: 100;
+  }
+  &__header {
+    border-bottom: 1px solid $line-color;
+
+    h2 {
+      font-size: 1rem;
+      padding: 1rem;
+      margin: 0;
+    }
+  }
+  &__content {
+    font-size: 1rem;
+    margin: 1.2rem;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.cart.open {
+  .cart__container {
+    display: block;
+  }
+}

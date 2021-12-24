@@ -20,7 +20,7 @@ const Product = (props) => {
       <Gallery />
       <div className="content">
         <div className="content__company-name">Sneaker Company</div>
-        <div className="content__header">Fall Limited Edition Sneakers</div>
+        <h1 className="content__header">Fall Limited Edition Sneakers</h1>
         <div className="content__desc">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything

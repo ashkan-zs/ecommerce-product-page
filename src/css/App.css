@@ -14,6 +14,40 @@ body {
   margin: 0 9rem;
 }
 
+.cart {
+  position: relative;
+}
+.cart__container {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 220px;
+  top: 50px;
+  right: -115px;
+  z-index: 100;
+}
+.cart__header {
+  border-bottom: 1px solid #f7f8fd;
+}
+.cart__header h2 {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+}
+.cart__content {
+  font-size: 1rem;
+  margin: 1.2rem;
+  color: #68707d;
+  display: flex;
+  justify-content: center;
+}
+
+.cart.open .cart__container {
+  display: block;
+}
+
 .nav {
   display: flex;
   justify-content: center;

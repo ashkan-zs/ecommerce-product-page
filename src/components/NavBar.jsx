@@ -1,8 +1,11 @@
 import React from "react";
+import Cart from "./Cart";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/images/";
 
-const NavBar = (props) => {
+const NavBar = ({ products }) => {
+  if (!products) products = [];
+
   return (
     <div className="nav container">
       <a href="#" className="logo">
@@ -18,9 +21,7 @@ const NavBar = (props) => {
         </ul>
       </nav>
       <div className="nav__profile">
-        <a href="#" className="cart">
-          <img src={`${imgPath}icon-cart.svg`} alt="cart icon" />
-        </a>
+        <Cart items={products} />
         <a href="#" className="profile">
           <img src={`${imgPath}image-avatar.png`} alt="profile avatar" />
         </a>

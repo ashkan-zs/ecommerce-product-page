@@ -1,0 +1,14 @@
+html {
+  font: 62.5%;
+  background-color: $white-color;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: $desktop-width;
+  margin: 0 9rem;
+}

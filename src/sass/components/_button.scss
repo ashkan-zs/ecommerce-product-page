@@ -1,0 +1,30 @@
+.btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: $white-color;
+  background-color: $primary-color;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 60%;
+  padding: 12px;
+  box-shadow: 0 25px 25px $primary-light-color;
+
+  &:hover {
+    background-color: lighten($primary-color, 20%);
+  }
+
+  &--icon {
+    padding: 0;
+    background-color: transparent;
+    color: $primary-color;
+    width: auto;
+    font-size: 1.5rem;
+    box-shadow: none;
+
+    &:hover {
+      background-color: transparent;
+      color: lighten($primary-color, 20%);
+    }
+  }
+}

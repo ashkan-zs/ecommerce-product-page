@@ -1,0 +1,57 @@
+@import "price";
+@import "badge";
+@import "button";
+
+.product {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.content {
+  margin: 4rem 1rem;
+  width: 45%;
+
+  &__company-name {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__header {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 1rem 0 2rem;
+  }
+  &__desc {
+    color: $text-color;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 7px;
+      background-color: $line-color;
+      padding: 7px;
+      width: 30%;
+    }
+  }
+
+  .price-container {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

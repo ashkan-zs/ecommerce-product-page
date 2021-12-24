@@ -1,0 +1,17 @@
+.price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 0.25rem 0;
+
+  &::before {
+    content: "$";
+  }
+
+  &--off {
+    color: $text-color;
+    font-size: 1rem;
+    text-decoration: line-through;
+    flex-basis: 100%;
+    padding: 0;
+  }
+}

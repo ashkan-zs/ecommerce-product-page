@@ -1,0 +1,13 @@
+.badge {
+  background-color: $primary-light-color;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 10px;
+  margin: 0 1rem;
+  border-radius: 5px;
+}

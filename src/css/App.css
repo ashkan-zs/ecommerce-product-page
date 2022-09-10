@@ -21,12 +21,12 @@ body {
   display: none;
   position: absolute;
   border-radius: 5px;
+  background-color: #fff;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
   width: 350px;
   height: 220px;
   top: 50px;
   right: -115px;
-  z-index: 100;
 }
 .cart__header {
   border-bottom: 1px solid #f7f8fd;

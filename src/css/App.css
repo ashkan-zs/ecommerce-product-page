@@ -43,6 +43,23 @@ body {
   display: flex;
   justify-content: center;
 }
+.cart__item {
+  display: flex;
+  flex-direction: column;
+}
+.cart__item .btn {
+  margin-top: 10px;
+  width: 100%;
+}
+.cart__item-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart__item-img {
+  width: 50px;
+  border-radius: 5px;
+}
 
 .cart.open .cart__container {
   display: block;

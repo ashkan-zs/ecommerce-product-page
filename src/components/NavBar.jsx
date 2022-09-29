@@ -4,8 +4,6 @@ import Cart from "./Cart";
 const imgPath = process.env.PUBLIC_URL + "/assets/images/";
 
 const NavBar = ({ products }) => {
-  if (!products) products = [];
-
   return (
     <div className="nav container">
       <a href="#" className="logo">
@@ -21,7 +19,7 @@ const NavBar = ({ products }) => {
         </ul>
       </nav>
       <div className="nav__profile">
-        <Cart items={products} />
+        <Cart item={products} />
         <a href="#" className="profile">
           <img src={`${imgPath}image-avatar.png`} alt="profile avatar" />
         </a>

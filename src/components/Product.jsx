@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import Gallery from "./Gallery";
 
-const Product = (props) => {
+const Product = ({ onAddItem }) => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = (e) => {
     setCounter(counter + 1);
   };
+
   const handleDecrement = (e) => {
     setCounter(counter - 1);
 
     if (counter <= 0) {
       setCounter(0);
     }
+  };
+
+  const handleAddToCart = () => {
+    onAddItem({
+      imgUrl: "image-product-1-thumbnail.jpg",
+      title: "Fall Limited Edition Sneakers",
+      price: "125.00",
+      counter,
+    });
   };
 
   return (
@@ -41,7 +51,9 @@ const Product = (props) => {
               +
             </button>
           </div>
-          <button className="btn">Add to cart</button>
+          <button className="btn" onClick={handleAddToCart}>
+            Add to cart
+          </button>
         </div>
       </div>
     </div>

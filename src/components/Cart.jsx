@@ -9,6 +9,9 @@ const Cart = ({ item }) => {
     <div className={cartClass}>
       <a href="#" onClick={() => setIsOpen(!isOpen)}>
         <img src={`${imgPath}icon-cart.svg`} alt="cart icon" />
+        {item.counter > 0 && (
+          <span className="cart__badge">{item.counter}</span>
+        )}
       </a>
       <div className="cart__container">
         <header className="cart__header">

@@ -6,11 +6,22 @@
   display: flex;
   gap: 5rem;
   margin-top: 4rem;
+
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
 }
 
 .content {
   margin: 4rem 1rem;
   width: 45%;
+
+  @media screen and (max-width: $mobile-width) {
+    width: 92%;
+    margin: 1rem;
+  }
 
   &__company-name {
     color: $primary-color;
@@ -35,6 +46,24 @@
     justify-content: space-between;
     margin-top: 2rem;
 
+    @media screen and (max-width: $mobile-width) {
+      flex-direction: column;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      &--add {
+        @media screen and (max-width: $mobile-width) {
+          width: 100%;
+        }
+      }
+      &--icon {
+        @media screen and (max-width: $mobile-width) {
+          margin: 0 15px;
+        }
+      }
+    }
+
     .counter {
       display: flex;
       align-items: center;
@@ -45,13 +74,30 @@
       background-color: $line-color;
       padding: 7px;
       width: 30%;
+
+      @media screen and (max-width: $mobile-width) {
+        width: 95%;
+        justify-content: space-between;
+        padding: 9px;
+        margin: 10px;
+      }
     }
   }
-
   .price-container {
     display: flex;
     margin-top: 2rem;
     align-items: center;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $mobile-width) {
+      flex-wrap: nowrap;
+    }
+  }
+  .price {
+    &--off {
+      @media screen and (max-width: $mobile-width) {
+        margin-left: 30%;
+      }
+    }
   }
 }

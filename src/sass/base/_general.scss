@@ -11,4 +11,8 @@ body {
 .container {
   max-width: $desktop-width;
   margin: 0 9rem;
+
+  @media screen and (max-width: $mobile-width) {
+    margin: 0;
+  }
 }

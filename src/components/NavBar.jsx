@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Cart from "./Cart";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/images/";
 
 const NavBar = ({ products }) => {
+  const [menuState, setMenuState] = useState(false);
+
+  const classes = !menuState ? "nav container" : "nav container open";
   return (
-    <div className="nav container">
+    <div className={classes}>
+      <div className="overlay"></div>
+      <div className="burger-menu" onClick={() => setMenuState(!menuState)}>
+        <div className="line line-1"></div>
+        <div className="line line-2"></div>
+        <div className="line line-3"></div>
+      </div>
       <a href="#" className="logo">
         <img src={`${imgPath}logo.svg`} alt="sneakers logo" />
       </a>
